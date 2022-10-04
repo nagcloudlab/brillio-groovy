@@ -248,6 +248,22 @@ groovy programming constructs
     - variable
     - function / method
 
+
 ---------------------------------------------------------------
+Grooving Naming Conventions
+---------------------------------------------------------------
+
+    keywords ==> lowercase
+    package names ==> lowercase
+    Type names( class , interface, enum , annotation, trait) ==> pascal case  A___B___C__
+        e.g class name , GroovyEmployee
+    variable / function names ==> camel-case  ___B___C___
+        e.g addTwoNumbers()
+    constant variable  ==> upper-case
+        e.g PI
+
+ ---------------------------------------------------------------
+
+
 
 
