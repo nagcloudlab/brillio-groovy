@@ -1,7 +1,6 @@
 package com.example
 
 class Employee {
-
     // class variables
     static def tnrName;
     // instance variables
@@ -30,14 +29,10 @@ class Employee {
 
 class ReferenceTypes {
     static void main(String[] args) {
-
         def e1=new Employee(); // Reference Types
-
         e1.name="tom"
         e1.age=20;
-
         e1.sayName()
         e1.sayAge()
-
     }
 }
