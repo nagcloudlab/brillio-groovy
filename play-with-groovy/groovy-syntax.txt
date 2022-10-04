@@ -1,0 +1,253 @@
+
+----------------------------------------------------------------
+1. groovy project
+----------------------------------------------------------------
+
+
+    project
+    |
+    |--- p1 ( .groovy / .class )
+    |
+    |--- p2
+    | |
+    | |--- p21
+    |
+
+----------------------------------------------------------------
+2. groovy file
+----------------------------------------------------------------
+
+ a. groovy script
+
+  -------------------------------
+  some-script.groovy
+  ----------------------------------
+  | // package declaration
+  | // import statements
+  | // variables
+  | // functions
+  |----------------------------------
+
+ -----------------------------------
+  class-name.groovy
+ ----------------------------------
+ | // package declaration
+ | // import statements
+ | // class declaration
+ |----------------------------------
+
+
+----------------------------------------------------------------
+3. package declaration
+----------------------------------------------------------------
+
+  why we need package declaration?
+
+  => to avoid type-name collisions
+  => to organize well based appln features
+
+  syntax:
+
+  package name;
+
+  recommended guidelines for package declaration:
+
+  e.g
+
+     Emp.groovy ==> emp ==> EM => brillio => com
+
+     package declaration:
+
+     package c-type.c-name.p-name.m-name;
+
+     e.g
+
+     emp.groovy
+
+     package com.brillio.em.emp;
+
+ ----------------------------------------------------------------
+ 4. import statements
+ ---------------------------------------------------------------
+
+  E.g
+
+   Proj
+   |
+   |-- p1 ( A.groovy, B.groovy )
+   |
+   |-- p2 ( C.groovy, D.groovy)
+   |
+   |
+
+
+ C.groovy
+
+    package p2
+    import p1.A;
+    import p1.B;
+    // - or -
+    import p1.*;
+    class C{
+        D d;
+        A a;
+        B b;
+    }
+
+   why we need import statements?
+
+   => to refer groovy types from other packages
+
+   syntax:
+
+   import name.Type;
+   import name.*;
+
+ ----------------------------------------------------------------
+
+ imp-note : groovy is object-oriented programming language
+
+ ----------------------------------------------------------------
+
+ what is object?
+
+  - info, data, attributes, properties => State
+  - functions, methods, work           => Behavior
+  - address, location,reference        => Identify
+
+  ----------------------------------------------------------------
+
+  -> some-time we need many similar objects to do anything
+  -> similar objects have same properties & behaviors
+  -> to create similar objects we need obj's template  ==> class
+
+  ----------------------------------------------------------------
+
+  in groovy, we can't make objects without class
+
+  ---------------------------------------------------------------
+
+  class
+
+    - instance(s)
+
+ ----------------------------------------------------------------
+
+ OO concepts:
+
+ - Interface /  Abstraction
+ - Implementation / Encapsulation
+ - Inheritance
+ - Polymorphism
+
+
+ ----------------------------------------------------------------
+  5. class syntax
+  ---------------------------------------------------------------
+
+
+  _______   ___________ class ClassName [extends] ParentClass
+  [public]   [abstract]                 [implements] Interface(s){
+  [private]  [final   ]       // variables   => to hold data
+  [protected]
+                              // functions   => produce new data
+                         }
+
+
+
+ ----------------------------------------------------------------
+  6. variable(s) syntax
+  ---------------------------------------------------------------
+
+
+    _______    _________ DataType varName = [value/obj's reference];
+    [private]  [static]
+    [public]   [final]
+    [protected]
+
+
+
+    in groovy, we have 2 types of variables
+
+    1. Primitive  ===> values
+    2. Reference  ===> obj's reference
+
+
+    to make primitive variables, we use keywords , e.g byte,short,int,long,....
+    to make reference variables, we use className
+
+    e.g
+        int v=12 // primitive variable
+        Person p=new Person() // reference variable
+
+    imp-note: groovy optionally typed programming language    e.g dynamic programming language
+
+    how?
+
+    def varName=12
+
+    e.g
+
+    class Employee{
+        def static tnrName="Nag"  // class/static variable
+        def name="Unknown";  // obj/instance variable
+        def doWork(){
+            def i=0;  // local variable
+        }
+    }
+
+---------------------------------------------------------------
+7. function/method
+---------------------------------------------------------------
+
+
+_______   _______ def funcName([arguments]){
+[public]  [static]     // Operators on data
+[private]               // Conditional statements
+[protected]             // Loop statements
+                        // Invoke other functions
+                        [result]
+                    }
+
+
+    ReturnType
+
+        - void
+        - primitive
+        - reference
+        - def ( groovy style function/method )
+
+    e.g
+
+        class Employee{
+            def static doTraining() {
+                println "doTraining"
+            }
+            def doListen(){
+                println "doListen"
+            }
+        }
+
+
+        in groovy, we have two types of functions
+
+        1. instance/object methods
+        2. class/static methods
+
+
+
+---------------------------------------------------------------
+groovy programming constructs
+---------------------------------------------------------------
+
+    - project
+    - groovy file ( as script / class )
+    - package declaration
+    - import statements
+    - class
+    - variable
+    - function / method
+
+---------------------------------------------------------------
+
+
