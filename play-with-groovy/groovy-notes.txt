@@ -1,0 +1,47 @@
+
+
+in groovy,
+
+object creation is 2-step process
+
+step-1 : allocate memory dynamically to hold object data  : 'new' keyword
+step-2 : initialize memory with default/user-given data   : 'constructor' function
+
+----------------------------------------------------------------
+
+
+by default, every class has one default constructor,
+when we didn't write any constructor
+
+default constructor will assign default-values while creating objects
+
+----------------------------------------------------------------
+
+how to create an object with required properties?
+
+-> replace default-constructor with argument-constructor
+-> overload-constructor to create an object with different properties
+-> groovy always overload-constructor to create an object
+
+----------------------------------------------------------------
+
+
+
+class
+
+    - construct as many objects
+
+----------------------------------------------------------------
+
+
+interface
+
+    implementation(s)
+
+
+ so that dependent classes can use any suitable implementation based on interface
+
+
+ ----------------------------------------------------------------
+
+
