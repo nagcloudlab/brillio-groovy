@@ -267,3 +267,13 @@ Grooving Naming Conventions
 
 
 
+            ---------------------------------------------------------------
+            same-package                         |  other-package
+            ---------------------------------------------------------------
+            same-type  | sub-type | other-type   |   sub-type |  other-type
+            ---------------------------------------------------------------
+ private      Y              N          N             N           N
+ package      Y              Y          Y             N           N
+ protected    Y              Y          Y             Y           N
+ public       Y              Y          Y             Y           Y
+
