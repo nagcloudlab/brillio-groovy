@@ -1,0 +1,74 @@
+
+
+
+
+data structures
+------------------------
+
+
+ 1. Primary
+    => hold single data element
+    e.g
+    int v=12
+
+    Note : can make primary structures by keywords
+
+ 2. Secondary
+
+    => hold multiple data elements ( objects )
+
+    e.g
+
+    - Array
+    - LinkedList
+    - Stack
+    - Queue
+    - Tree
+    - HashTable
+
+    ----------------------------------------------------------------------------
+    java community given many ready-to-use data structures ( a.k.a collections )
+    ----------------------------------------------------------------------------
+
+    1. List
+
+        - index based
+        - ordered output
+
+    2. Set
+
+        - No index
+        - Unique elements
+
+    3. Map
+
+        => to keep data elements with user defined key
+
+
+    ----------------------------------------------------------------------------
+
+    Collection classes
+
+    1. List
+
+        - ArrayList  ( dynamic array )
+        - LinkedList ( double linked list )
+
+    2. Set
+
+        - TreeSet  ( sorted output )
+        - HashSet  ( un-ordered output )
+        - LinkedHashSet ( ordered output )
+
+    3. Map
+
+         - TreeMap  ( sorted output )
+         - HashHap  ( un-ordered output )
+         - LinkedHashMap ( ordered output )
+
+
+
+
+
+
+
